@@ -1,0 +1,52 @@
+
+h1 {
+	text-align: center;
+
+}
+
+#Container {
+display: grid;
+justify-items: center;
+grid gap: 20px;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+grid-template-rows: 1fr;
+}
+
+.set2 .active {
+	border: solid yellow;
+	grid-column: span 2;
+	grid-row: 1/3;
+	align-self: end;
+}
+
+
+
+
+
+/*#Container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+}*/
+
+img {
+	width: 300px;
+	height: 250px;
+	margin: 10px;
+	transition: all 1s;
+}
+
+
+.set1 img:hover {
+	transform: scale(1.2);
+}
+
+.set2 img:hover {
+	transform: rotate(360deg);
+
+}
+
+.set3 img:hover {
+	transform: translate(20px, -40px);
+
+}
